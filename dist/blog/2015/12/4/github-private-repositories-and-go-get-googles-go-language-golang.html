@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+  <base href="https://ory.github.io/sites-projects/aeneas-io/dist/">
+  <title>Go and GitHub Private Repos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet"></head>
+<body data-page="eba4d5c6-b6e9-4b2f-ab2b-062769a15784">
+<div id="root">
+  <div class=""><div class="ory-row"><div class="ory-cell ory-cell-md-12 ory-cell-xs-12"><div class="ory-row ory-cell-inner"><div class="ory-cell ory-cell-md-12 ory-cell-xs-12"><div class="ory-cell-inner ory-cell-leaf"><div><p>If you want to fetch GitHub private repositories via <code>go get</code>, you&#x27;re in the right place.</p><h4>Generate a ssh key</h4><p>First, you&#x27;ll need to create an ssh key. GitHub explains this very well <a href="https://help.github.com/articles/generating-ssh-keys">here</a>.</p><h4>Add a deploy key to the private repository</h4><p>Now, add the public key as an deploy key to the private GitHub repository. This is described <a href="https://developer.github.com/guides/managing-deploy-keys/#deploy-keys">here</a>.</p><h4>Tell go get to use ssh for your private repository</h4></div></div></div></div><div class="ory-row ory-cell-inner"><div class="ory-cell ory-cell-md-12 ory-cell-xs-12"><div class="ory-cell-inner ory-cell-leaf"><div><p>Simply execute the following <em>(replace &lt;user&gt; and &lt;repo&gt; with your parameters.)</em></p><pre style="overflow:scroll;"><code>$ git config --global url.&quot;git@github.com:&lt;user&gt;/&lt;private-repo&gt;&quot;.insteadOf &quot;https://github.com/&lt;user&gt;/&lt;private-repo&gt;&quot;</code></pre><p>You should now be able to run go get:</p><pre style="overflow:scroll;"><code>$ go get github.com/&lt;user&gt;/&lt;private-repo&gt;</code></pre></div></div></div></div></div></div></div>
+</div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
