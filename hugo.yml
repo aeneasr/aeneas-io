@@ -1,0 +1,67 @@
+baseURL: 'https://aeneas.io/'
+languageCode: 'en-us'
+title: 'aeneas.io'
+theme: "PaperMod"
+
+
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "Aeneas' personal website"
+  keywords: [ Aeneas, Portfolio ]
+  author: Aeneas
+  defaultTheme: dark # dark, light
+  disableThemeToggle: true
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Aeneas Rekkas
+    subtitle: |
+      Founder and CTO at **[Ory](https://www.ory.net)**
+      
+      Co-founder at **[Serlo](https://www.serlo.org)**
+    imageUrl: "/static/images/profile.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: Aeneas
+
+  socialIcons:
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/aeneasr/
+    - name: github
+      url: https://github.com/aeneasr
+    - name: soundcloud
+      url: https://soundcloud.com/noise-colors
+    - name: instagram
+      url: https://instagram.com/__aeneas
+
+menu:
+  main:
+    - identifier: ory
+      name: Ory
+      url: https://www.ory.net
+      weight: 1
+    - identifier: serlo
+      name: Serlo
+      url: https://www.serlo.org
+      weight: 2
+    - identifier: ebc
+      name: Eisbach Callin'
+      url: https://eisbachcallin.com/
+      weight: 3
+
+staticDir:
+  - static
