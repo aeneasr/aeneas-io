@@ -18,7 +18,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: aeneas.io
   description: "Aeneas' personal website"
   keywords: [ Aeneas, Portfolio ]
   author: Aeneas
